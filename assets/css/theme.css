@@ -1,0 +1,385 @@
+html[data-theme="dark"] body.app-body,
+body.app-body.theme-is-dark {
+    --bg: #020617;
+    --surface: #0f172a;
+    --surface-soft: #1e293b;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --border: #334155;
+    --shadow-sm: 0 12px 34px rgba(0, 0, 0, 0.32);
+    --shadow-md: 0 24px 64px rgba(14, 165, 233, 0.12);
+    color: var(--text);
+    color-scheme: dark;
+    background:
+        radial-gradient(circle at 20% 0%, rgba(14, 165, 233, 0.16), transparent 34%),
+        radial-gradient(circle at 84% 12%, rgba(16, 185, 129, 0.12), transparent 32%),
+        linear-gradient(180deg, #020617, #0f172a 58%, #020617) !important;
+}
+
+html[data-theme="dark"] .app-body .sidebar,
+body.app-body.theme-is-dark .sidebar {
+    background: rgba(15, 23, 42, 0.94) !important;
+    border-right-color: rgba(51, 65, 85, 0.95) !important;
+    box-shadow: 18px 0 44px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="dark"] .app-body .topbar,
+body.app-body.theme-is-dark .topbar {
+    background: rgba(2, 6, 23, 0.82) !important;
+    border-bottom-color: rgba(51, 65, 85, 0.9) !important;
+}
+
+html[data-theme="dark"] .app-body .surface-card,
+html[data-theme="dark"] .app-body .panel,
+html[data-theme="dark"] .app-body .form-card,
+html[data-theme="dark"] .app-body .report-paper,
+body.app-body.theme-is-dark .surface-card,
+body.app-body.theme-is-dark .panel,
+body.app-body.theme-is-dark .form-card,
+body.app-body.theme-is-dark .report-paper {
+    color: var(--text) !important;
+    border-color: rgba(51, 65, 85, 0.94) !important;
+    background: rgba(15, 23, 42, 0.9) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+html[data-theme="dark"] .app-body .dashboard-hero,
+body.app-body.theme-is-dark .dashboard-hero {
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(8, 47, 73, 0.78)),
+        var(--surface) !important;
+}
+
+html[data-theme="dark"] .app-body .brand,
+body.app-body.theme-is-dark .brand {
+    border-bottom-color: rgba(51, 65, 85, 0.95) !important;
+}
+
+html[data-theme="dark"] .app-body .nav-link,
+body.app-body.theme-is-dark .nav-link {
+    color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .app-body .nav-link:hover,
+html[data-theme="dark"] .app-body .nav-link.is-active,
+body.app-body.theme-is-dark .nav-link:hover,
+body.app-body.theme-is-dark .nav-link.is-active {
+    color: #f8fafc !important;
+    background: rgba(37, 99, 235, 0.2) !important;
+}
+
+html[data-theme="dark"] .app-body .nav-link.is-active,
+body.app-body.theme-is-dark .nav-link.is-active {
+    box-shadow: inset 3px 0 0 #38bdf8 !important;
+}
+
+html[data-theme="dark"] .app-body .nav-link-logout,
+body.app-body.theme-is-dark .nav-link-logout {
+    color: #fecaca !important;
+    background: rgba(239, 68, 68, 0.14) !important;
+}
+
+html[data-theme="dark"] .app-body .topbar h1,
+html[data-theme="dark"] .app-body .topbar-user strong,
+html[data-theme="dark"] .app-body .page-header h2,
+html[data-theme="dark"] .app-body .dashboard-hero h2,
+html[data-theme="dark"] .app-body .panel-header h3,
+html[data-theme="dark"] .app-body .field label,
+html[data-theme="dark"] .app-body .data-table td,
+html[data-theme="dark"] .app-body .report-field strong,
+html[data-theme="dark"] .app-body .report-field p,
+html[data-theme="dark"] .app-body .activity-item strong,
+html[data-theme="dark"] .app-body .quick-action strong,
+body.app-body.theme-is-dark .topbar h1,
+body.app-body.theme-is-dark .topbar-user strong,
+body.app-body.theme-is-dark .page-header h2,
+body.app-body.theme-is-dark .dashboard-hero h2,
+body.app-body.theme-is-dark .panel-header h3,
+body.app-body.theme-is-dark .field label,
+body.app-body.theme-is-dark .data-table td,
+body.app-body.theme-is-dark .report-field strong,
+body.app-body.theme-is-dark .report-field p,
+body.app-body.theme-is-dark .activity-item strong,
+body.app-body.theme-is-dark .quick-action strong {
+    color: var(--text) !important;
+}
+
+html[data-theme="dark"] .app-body .brand small,
+html[data-theme="dark"] .app-body .topbar-user span,
+html[data-theme="dark"] .app-body .page-header p,
+html[data-theme="dark"] .app-body .dashboard-hero p,
+html[data-theme="dark"] .app-body .field-hint,
+html[data-theme="dark"] .app-body .record-title span,
+html[data-theme="dark"] .app-body .empty-state p,
+html[data-theme="dark"] .app-body .quick-action span,
+html[data-theme="dark"] .app-body .activity-item span,
+html[data-theme="dark"] .app-body .report-field span,
+body.app-body.theme-is-dark .brand small,
+body.app-body.theme-is-dark .topbar-user span,
+body.app-body.theme-is-dark .page-header p,
+body.app-body.theme-is-dark .dashboard-hero p,
+body.app-body.theme-is-dark .field-hint,
+body.app-body.theme-is-dark .record-title span,
+body.app-body.theme-is-dark .empty-state p,
+body.app-body.theme-is-dark .quick-action span,
+body.app-body.theme-is-dark .activity-item span,
+body.app-body.theme-is-dark .report-field span {
+    color: var(--muted) !important;
+}
+
+html[data-theme="dark"] .app-body .field input,
+html[data-theme="dark"] .app-body .field select,
+html[data-theme="dark"] .app-body .field textarea,
+body.app-body.theme-is-dark .field input,
+body.app-body.theme-is-dark .field select,
+body.app-body.theme-is-dark .field textarea {
+    color: var(--text) !important;
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(2, 6, 23, 0.64) !important;
+}
+
+html[data-theme="dark"] .app-body .field input::placeholder,
+html[data-theme="dark"] .app-body .field textarea::placeholder,
+body.app-body.theme-is-dark .field input::placeholder,
+body.app-body.theme-is-dark .field textarea::placeholder {
+    color: #64748b !important;
+}
+
+html[data-theme="dark"] .app-body .field input:focus,
+html[data-theme="dark"] .app-body .field select:focus,
+html[data-theme="dark"] .app-body .field textarea:focus,
+body.app-body.theme-is-dark .field input:focus,
+body.app-body.theme-is-dark .field select:focus,
+body.app-body.theme-is-dark .field textarea:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.14) !important;
+}
+
+html[data-theme="dark"] .app-body .data-table th,
+body.app-body.theme-is-dark .data-table th {
+    color: #cbd5e1 !important;
+    border-bottom-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(2, 6, 23, 0.76) !important;
+}
+
+html[data-theme="dark"] .app-body .data-table td,
+body.app-body.theme-is-dark .data-table td {
+    border-bottom-color: rgba(51, 65, 85, 0.86) !important;
+}
+
+html[data-theme="dark"] .app-body .data-table tbody tr:hover,
+body.app-body.theme-is-dark .data-table tbody tr:hover {
+    background: rgba(14, 165, 233, 0.09) !important;
+}
+
+html[data-theme="dark"] .app-body .stat-icon,
+html[data-theme="dark"] .app-body .icon-btn,
+html[data-theme="dark"] .app-body .btn-soft,
+html[data-theme="dark"] .app-body .quick-action,
+html[data-theme="dark"] .app-body .activity-item,
+html[data-theme="dark"] .app-body .tester-row,
+html[data-theme="dark"] .app-body .report-field,
+body.app-body.theme-is-dark .stat-icon,
+body.app-body.theme-is-dark .icon-btn,
+body.app-body.theme-is-dark .btn-soft,
+body.app-body.theme-is-dark .quick-action,
+body.app-body.theme-is-dark .activity-item,
+body.app-body.theme-is-dark .tester-row,
+body.app-body.theme-is-dark .report-field {
+    color: #e2e8f0 !important;
+    border-color: rgba(51, 65, 85, 0.94) !important;
+    background: rgba(30, 41, 59, 0.84) !important;
+}
+
+html[data-theme="dark"] .app-body .icon-btn:hover,
+html[data-theme="dark"] .app-body .btn-soft:hover,
+html[data-theme="dark"] .app-body .quick-action:hover,
+body.app-body.theme-is-dark .icon-btn:hover,
+body.app-body.theme-is-dark .btn-soft:hover,
+body.app-body.theme-is-dark .quick-action:hover {
+    color: #7dd3fc !important;
+    border-color: rgba(56, 189, 248, 0.6) !important;
+    background: rgba(14, 165, 233, 0.14) !important;
+    box-shadow: 0 18px 38px rgba(14, 165, 233, 0.12) !important;
+}
+
+html[data-theme="dark"] .app-body .btn-secondary,
+body.app-body.theme-is-dark .btn-secondary {
+    color: #bae6fd !important;
+    border-color: rgba(56, 189, 248, 0.42) !important;
+    background: rgba(14, 165, 233, 0.14) !important;
+}
+
+html[data-theme="dark"] .app-body .theme-toggle,
+body.app-body.theme-is-dark .theme-toggle {
+    color: #cbd5e1 !important;
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(15, 23, 42, 0.9) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-toggle,
+body.app-body.theme-is-dark .user-dropdown-toggle {
+    color: var(--text) !important;
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(15, 23, 42, 0.9) !important;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-toggle:hover,
+html[data-theme="dark"] .app-body .user-dropdown.show .user-dropdown-toggle,
+body.app-body.theme-is-dark .user-dropdown-toggle:hover,
+body.app-body.theme-is-dark .user-dropdown.show .user-dropdown-toggle {
+    border-color: rgba(56, 189, 248, 0.62) !important;
+    background: rgba(30, 41, 59, 0.95) !important;
+    box-shadow: 0 18px 42px rgba(14, 165, 233, 0.12) !important;
+}
+
+html[data-theme="dark"] .app-body .topbar-user-details strong,
+body.app-body.theme-is-dark .topbar-user-details strong {
+    color: var(--text) !important;
+}
+
+html[data-theme="dark"] .app-body .topbar-user-details > span:not(.badge),
+body.app-body.theme-is-dark .topbar-user-details > span:not(.badge) {
+    color: var(--muted) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-menu,
+body.app-body.theme-is-dark .user-dropdown-menu {
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(15, 23, 42, 0.98) !important;
+    box-shadow: 0 24px 54px rgba(0, 0, 0, 0.42) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-menu::before,
+body.app-body.theme-is-dark .user-dropdown-menu::before {
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(15, 23, 42, 0.98) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-item,
+body.app-body.theme-is-dark .user-dropdown-item {
+    color: #e2e8f0 !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-item:hover,
+body.app-body.theme-is-dark .user-dropdown-item:hover {
+    color: #7dd3fc !important;
+    background: rgba(14, 165, 233, 0.14) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-item.is-danger,
+body.app-body.theme-is-dark .user-dropdown-item.is-danger {
+    color: #fecaca !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-item.is-danger:hover,
+body.app-body.theme-is-dark .user-dropdown-item.is-danger:hover {
+    color: #fecaca !important;
+    background: rgba(239, 68, 68, 0.16) !important;
+}
+
+html[data-theme="dark"] .app-body .theme-toggle:hover,
+body.app-body.theme-is-dark .theme-toggle:hover {
+    color: #7dd3fc !important;
+    border-color: rgba(56, 189, 248, 0.65) !important;
+    background: rgba(14, 165, 233, 0.14) !important;
+}
+
+html[data-theme="dark"] .app-body .theme-toggle-track,
+body.app-body.theme-is-dark .theme-toggle-track {
+    background: linear-gradient(135deg, #0f172a, #075985) !important;
+    box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.22) !important;
+}
+
+html[data-theme="dark"] .app-body .theme-toggle-thumb,
+body.app-body.theme-is-dark .theme-toggle-thumb {
+    color: #7dd3fc !important;
+    background: #020617 !important;
+    transform: translateX(26px) !important;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.28) !important;
+}
+
+html[data-theme="dark"] .app-body .theme-icon-sun,
+body.app-body.theme-is-dark .theme-icon-sun {
+    opacity: 0 !important;
+    transform: rotate(70deg) scale(0.5) !important;
+}
+
+html[data-theme="dark"] .app-body .theme-icon-moon,
+body.app-body.theme-is-dark .theme-icon-moon {
+    opacity: 1 !important;
+    transform: rotate(0) scale(1) !important;
+}
+
+html[data-theme="dark"] .app-body .flash,
+body.app-body.theme-is-dark .flash {
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(15, 23, 42, 0.94) !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-toggle,
+body.app-body.theme-is-dark .user-dropdown-toggle {
+    border: 0 !important;
+    color: var(--text) !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-toggle:hover,
+html[data-theme="dark"] .app-body .user-dropdown.show .user-dropdown-toggle,
+body.app-body.theme-is-dark .user-dropdown-toggle:hover,
+body.app-body.theme-is-dark .user-dropdown.show .user-dropdown-toggle {
+    background: rgba(30, 41, 59, 0.92) !important;
+    box-shadow: none !important;
+}
+
+html[data-theme="dark"] .app-body .user-meta strong,
+body.app-body.theme-is-dark .user-meta strong {
+    color: #f8fafc !important;
+}
+
+html[data-theme="dark"] .app-body .user-meta small,
+body.app-body.theme-is-dark .user-meta small {
+    color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .app-body .role-badge,
+body.app-body.theme-is-dark .role-badge {
+    color: #7dd3fc !important;
+    background: rgba(14, 165, 233, 0.18) !important;
+}
+
+html[data-theme="dark"] .app-body .dropdown-chevron,
+body.app-body.theme-is-dark .dropdown-chevron {
+    color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .app-body .user-dropdown-menu,
+body.app-body.theme-is-dark .user-dropdown-menu {
+    border-color: rgba(51, 65, 85, 0.95) !important;
+    background: rgba(15, 23, 42, 0.98) !important;
+    box-shadow: 0 24px 54px rgba(0, 0, 0, 0.42) !important;
+}
+
+html[data-theme="dark"] .app-body .dropdown-item,
+body.app-body.theme-is-dark .dropdown-item {
+    color: #e2e8f0 !important;
+}
+
+html[data-theme="dark"] .app-body .dropdown-item:hover,
+body.app-body.theme-is-dark .dropdown-item:hover {
+    color: #f8fafc !important;
+    background: rgba(30, 41, 59, 0.92) !important;
+}
+
+html[data-theme="dark"] .app-body .dropdown-item.logout,
+body.app-body.theme-is-dark .dropdown-item.logout {
+    color: #fca5a5 !important;
+}
+
+html[data-theme="dark"] .app-body .dropdown-item.logout:hover,
+body.app-body.theme-is-dark .dropdown-item.logout:hover {
+    color: #fecaca !important;
+    background: rgba(239, 68, 68, 0.16) !important;
+}

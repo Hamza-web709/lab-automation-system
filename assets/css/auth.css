@@ -1,0 +1,85 @@
+.auth-body {
+    min-height: 100vh;
+    background:
+        linear-gradient(135deg, rgba(239, 246, 255, 0.88), rgba(248, 250, 252, 1)),
+        var(--bg);
+}
+
+.auth-page {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 520px);
+    gap: 44px;
+    align-items: center;
+    min-height: 100vh;
+    padding: 42px;
+}
+
+.auth-panel {
+    padding: 34px;
+}
+
+.auth-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.auth-copy h1 {
+    max-width: 680px;
+    margin: 0;
+    font-size: 46px;
+    line-height: 1.08;
+}
+
+.auth-copy p {
+    max-width: 620px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.auth-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 720px;
+    margin-top: 28px;
+}
+
+.auth-highlight {
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.auth-highlight strong {
+    display: block;
+}
+
+.auth-highlight span {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.auth-panel h2 {
+    margin: 0 0 8px;
+    font-size: 28px;
+}
+
+.auth-panel > p {
+    margin: 0 0 24px;
+    color: var(--muted);
+}
+
+.auth-footer-link {
+    margin-top: 20px;
+    color: var(--muted);
+    text-align: center;
+}
+
+.auth-footer-link a {
+    color: var(--primary);
+    font-weight: 800;
+}

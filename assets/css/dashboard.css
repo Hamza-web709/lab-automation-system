@@ -1,0 +1,139 @@
+.dashboard-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 22px;
+    padding: 24px;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.92), rgba(239,246,255,0.92)),
+        var(--surface);
+}
+
+.dashboard-hero h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.dashboard-hero p {
+    max-width: 720px;
+    margin: 8px 0 0;
+    color: var(--muted);
+}
+
+.dashboard-lottie {
+    width: 100%;
+    height: 180px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.stat-card {
+    padding: 18px;
+}
+
+.stat-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius);
+    color: var(--primary);
+    background: #eff6ff;
+}
+
+.stat-card strong {
+    display: block;
+    margin-top: 16px;
+    font-size: 28px;
+    line-height: 1.1;
+}
+
+.stat-card span {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 18px;
+    align-items: start;
+}
+
+.panel {
+    padding: 20px;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.panel-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.quick-actions {
+    display: grid;
+    gap: 10px;
+}
+
+.quick-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.quick-action:hover {
+    transform: translateY(-1px);
+    border-color: #bfdbfe;
+    box-shadow: var(--shadow-sm);
+}
+
+.quick-action span {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.activity-list {
+    display: grid;
+    gap: 12px;
+}
+
+.activity-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.activity-item:last-child {
+    border-bottom: 0;
+}
+
+.activity-item strong {
+    display: block;
+}
+
+.activity-item span {
+    color: var(--muted);
+    font-size: 12px;
+}

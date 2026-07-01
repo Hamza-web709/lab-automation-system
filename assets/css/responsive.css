@@ -1,0 +1,264 @@
+@media (max-width: 1180px) {
+    .stats-grid,
+    .feature-grid,
+    .problem-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .workflow-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 980px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 220ms ease;
+    }
+
+    body.sidebar-open .sidebar {
+        transform: translateX(0);
+    }
+
+    body.sidebar-open .sidebar-backdrop {
+        display: block;
+    }
+
+    .app-shell {
+        padding-left: 0;
+    }
+
+    .mobile-menu {
+        display: inline-flex;
+    }
+
+    .topbar {
+        padding: 14px 18px;
+    }
+
+    .topbar-user {
+        min-width: auto;
+    }
+
+    .topbar-actions {
+        gap: 8px;
+    }
+
+    .user-dropdown-toggle {
+        min-height: 46px;
+        padding-right: 8px;
+    }
+
+    .user-meta {
+        min-width: 108px;
+    }
+
+    .user-meta strong,
+    .user-meta small {
+        max-width: 126px;
+    }
+
+    .content {
+        padding: 22px 18px 34px;
+    }
+
+    .dashboard-hero,
+    .dashboard-grid,
+    .auth-page {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-hero {
+        display: grid;
+        min-height: auto;
+        padding: 46px 0 58px;
+    }
+
+    .hero-visual {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        min-height: 360px;
+        transform: none;
+    }
+
+    .lab-console {
+        position: relative;
+        inset: auto;
+        min-height: 360px;
+    }
+
+    .dashboard-lottie,
+    .hero-lottie {
+        height: 220px;
+    }
+
+    .hero-visual {
+        min-height: 390px;
+    }
+
+    .filter-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .solution-showcase {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: min(100% - 28px, 1160px);
+    }
+
+    .landing-links {
+        display: none;
+    }
+
+    .hero-copy h1,
+    .auth-copy h1 {
+        font-size: 40px;
+    }
+
+    .hero-copy p,
+    .auth-copy p {
+        font-size: 16px;
+    }
+
+    .feature-grid,
+    .problem-grid,
+    .workflow-grid,
+    .stats-grid,
+    .form-grid,
+    .auth-highlights,
+    .report-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid .span-2 {
+        grid-column: auto;
+    }
+
+    .page-header {
+        display: grid;
+    }
+
+    .filter-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .tester-row {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-page {
+        padding: 22px 14px;
+    }
+
+    .auth-copy {
+        display: none;
+    }
+
+    .footer .container {
+        display: grid;
+    }
+
+    .theme-toggle {
+        padding-right: 5px;
+    }
+
+    .theme-toggle-text {
+        display: none;
+    }
+
+    .user-dropdown-menu {
+        right: 0;
+        width: min(210px, calc(100vw - 32px));
+    }
+
+    .hero-proof {
+        grid-template-columns: 1fr;
+    }
+
+    .floating-metric {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin-top: 12px;
+    }
+
+    .metric-two {
+        bottom: auto;
+    }
+
+    .signal-board {
+        left: 16px;
+        right: 16px;
+    }
+
+    .solution-showcase h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .topbar h1 {
+        font-size: 20px;
+    }
+
+    .hero-copy h1 {
+        font-size: 34px;
+    }
+
+    .topbar-actions {
+        gap: 6px;
+    }
+
+    .user-meta {
+        min-width: 86px;
+    }
+
+    .user-meta strong,
+    .user-meta small {
+        max-width: 92px;
+    }
+
+    .role-badge {
+        padding-inline: 6px;
+        font-size: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-actions,
+    .form-actions,
+    .table-actions {
+        width: 100%;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    .landing-cursor {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .landing-cursor,
+    .scroll-progress {
+        display: none;
+    }
+}
