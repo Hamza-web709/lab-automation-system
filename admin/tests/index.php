@@ -11,8 +11,15 @@ $where = [];
 $params = [];
 
 if ($q !== '') {
-    $where[] = '(tr.test_id LIKE :q OR p.product_id LIKE :q OR p.product_name LIKE :q OR tt.name LIKE :q)';
-    $params['q'] = '%' . $q . '%';
+    $searchTerm = '%' . $q . '%';
+    $where[] = '(tr.test_id LIKE :q_test_id
+        OR p.product_id LIKE :q_product_id
+        OR p.product_name LIKE :q_product_name
+        OR tt.name LIKE :q_testing_type)';
+    $params['q_test_id'] = $searchTerm;
+    $params['q_product_id'] = $searchTerm;
+    $params['q_product_name'] = $searchTerm;
+    $params['q_testing_type'] = $searchTerm;
 }
 if (in_array($result, ['pass', 'fail', 'pending'], true)) {
     $where[] = 'tr.result = :result';

@@ -12,8 +12,10 @@ $where = [];
 $params = [];
 
 if ($q !== '') {
-    $where[] = '(tt.name LIKE :q OR tt.testing_code LIKE :q)';
-    $params['q'] = '%' . $q . '%';
+    $searchTerm = '%' . $q . '%';
+    $where[] = '(tt.name LIKE :q_name OR tt.testing_code LIKE :q_testing_code)';
+    $params['q_name'] = $searchTerm;
+    $params['q_testing_code'] = $searchTerm;
 }
 if ($departmentId > 0) {
     $where[] = 'tt.department_id = :department_id';

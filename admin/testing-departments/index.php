@@ -10,8 +10,10 @@ $where = [];
 $params = [];
 
 if ($q !== '') {
-    $where[] = '(name LIKE :q OR code LIKE :q)';
-    $params['q'] = '%' . $q . '%';
+    $searchTerm = '%' . $q . '%';
+    $where[] = '(name LIKE :q_name OR code LIKE :q_code)';
+    $params['q_name'] = $searchTerm;
+    $params['q_code'] = $searchTerm;
 }
 if (in_array($status, ['active', 'inactive'], true)) {
     $where[] = 'status = :status';

@@ -12,8 +12,11 @@ $where = [];
 $params = [];
 
 if ($q !== '') {
-    $where[] = '(name LIKE :q OR username LIKE :q OR email LIKE :q)';
-    $params['q'] = '%' . $q . '%';
+    $searchTerm = '%' . $q . '%';
+    $where[] = '(name LIKE :q_name OR username LIKE :q_username OR email LIKE :q_email)';
+    $params['q_name'] = $searchTerm;
+    $params['q_username'] = $searchTerm;
+    $params['q_email'] = $searchTerm;
 }
 if (in_array($role, ['admin', 'lab_manager', 'tester'], true)) {
     $where[] = 'role = :role';

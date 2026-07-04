@@ -11,8 +11,15 @@ $where = [];
 $params = [];
 
 if ($q !== '') {
-    $where[] = '(p.product_id LIKE :q OR p.product_name LIKE :q OR p.product_code LIKE :q OR p.batch_no LIKE :q)';
-    $params['q'] = '%' . $q . '%';
+    $searchTerm = '%' . $q . '%';
+    $where[] = '(p.product_id LIKE :q_product_id
+        OR p.product_name LIKE :q_product_name
+        OR p.product_code LIKE :q_product_code
+        OR p.batch_no LIKE :q_batch_no)';
+    $params['q_product_id'] = $searchTerm;
+    $params['q_product_name'] = $searchTerm;
+    $params['q_product_code'] = $searchTerm;
+    $params['q_batch_no'] = $searchTerm;
 }
 if ($productTypeId > 0) {
     $where[] = 'p.product_type_id = :product_type_id';
